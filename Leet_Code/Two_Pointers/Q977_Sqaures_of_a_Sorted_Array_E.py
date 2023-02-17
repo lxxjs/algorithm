@@ -4,23 +4,25 @@
 # 그치만 면접같은 알고리즘에 대한 이론적 이해도를 보여주려면 1번 같은 정석 답을 내놓을 줄 알아야한다. 
 
 # 1
-# class Solution:
-#     def sortedSquares(self, nums: List[int]) -> List[int]:
+"""
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
         
-#         # Two Pointer Approach
-#         n = len(nums)
-#         l, r = 0, n - 1
-#         k = n - 1
-#         ans = [0] * n
-#         while k >= 0:
-#             if abs(nums[l]) > nums[r]:
-#                 ans[k] = nums[l] * nums[l]
-#                 l += 1
-#             else:
-#                 ans[k] = nums[r] * nums[r]
-#                 r -= 1
-#             k -= 1
-#         return ans
+        # Two Pointer Approach
+        n = len(nums)
+        l, r = 0, n - 1
+        k = n - 1
+        ans = [0] * n
+        while k >= 0:
+            if abs(nums[l]) > nums[r]:
+                ans[k] = nums[l] * nums[l]
+                l += 1
+            else:
+                ans[k] = nums[r] * nums[r]
+                r -= 1
+            k -= 1
+        return ans
+"""
 
 # 2
 class Solution:
