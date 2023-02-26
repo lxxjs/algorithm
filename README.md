@@ -1,2 +1,2 @@
 # algorithm
-Daily leetcode
+Daily Leetcode
