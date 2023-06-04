@@ -6,12 +6,4 @@ class Solution:
         while i < min_length :
             ans += word1[i] + word2[i]
             i += 1
-        if len(word1) > len(word2):
-            while i < len(word1):
-                ans += word1[i]
-                i += 1
-        else:
-            while i < len(word2):
-                ans += word2[i]
-                i += 1
-        return ans
+        return ans + word1[i:] + word2[i:]
