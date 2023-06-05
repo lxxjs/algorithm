@@ -11,3 +11,6 @@ class Solution:
 
 # TIME COMPLEXITY : O(n)
 # SPACE COMPLEXITY : O(1)
+
+# 1. Assign the length value to a variable in advance so that you wouldn't call the func n times
+# 2. Convenient way to assign values in an array in Python
