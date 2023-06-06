@@ -1,14 +1,18 @@
 class Solution:
     def reverseVowels(self, s: str) -> str:
         vowels = ['a','e','i','o','u','A','E','I','O','U']
-        arr = []
-        n = len(s)
-        for i in range(n):
-            if s[i] in vowels:
-                arr.append(i)
-        
-        m = len(arr)
         s = list(s)
-        for i in range(m//2):
-            s[arr[i]],s[arr[m-1-i]] = s[arr[m-1-i]],s[arr[i]]
+        n = len(s)
+        end = n - 1
+        for start in range(n):
+            if start >= end:
+                break
+            if s[start] in vowels:
+                while end > start:
+                    if s[end] not in vowels:
+                        end -= 1
+                    else:
+                        s[start],s[end] = s[end],s[start]
+                        end -= 1
+                        break
         return ''.join(s)
