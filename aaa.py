@@ -1,3 +1,3 @@
-a = [1,2,3,4,5]
-
-print(round(3/2))
+a = [1,2,3]
+b = a
+print(b, type(b))
