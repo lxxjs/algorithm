@@ -13,3 +13,5 @@ class Solution:
                         return letters[i]
         else:
             return letters[0]
+        
+        #Use binary search and do it again
