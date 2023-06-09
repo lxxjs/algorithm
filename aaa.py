@@ -1,3 +1,4 @@
 a = [1,2,3]
-b = a
-print(b, type(b))
+
+a.index(value)
+a.
