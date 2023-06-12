@@ -1,4 +1,6 @@
 a = [1,2,3]
+n = len(a)
 
-a.index(value)
-a.
+b = [1] * n
+
+print(sum(a[0:]))
